@@ -3,7 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cipher Strike</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Main Game Container -->
+    <div id="game-container">
+      <!-- Screen 1: Splash Screen -->
+      <div id="splash-screen" class="screen active">
+        <div class="info-div">
+          <button class="info-btn">i</button>
+        </div>
+
+        <div id="logo">
+          <img src="assets/images/logo.png" alt="Cipher Strike Logo" />
+        </div>
+
+        <div class="start-btn-container">
+          <button class="start-btn" onclick="goToMainMenu()">Start</button>
+        </div>
+      </div>
+
+      <!-- Screen 2: Main Menu -->
+      <div id="main-menu" class="screen"></div>
+
+      <!-- Screen 3: Game Selection -->
+      <div id="game-selection" class="screen"></div>
+
+      <!-- Screen 4: Memory Game -->
+      <div id="memory-game" class="screen"></div>
+
+      <!-- Screen 5: Math Game -->
+      <div id="math-game" class="screen"></div>
+
+      <!-- Screen 6: Word Scramble Game -->
+      <div id="word-scramble" class="screen"></div>
+
+      <!-- Screen 7: Game Over -->
+      <div id="game-over" class="screen"></div>
+
+      <!-- Screen 8: Victory -->
+      <div id="victory" class="screen"></div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script defer src="js/app.js"></script>
+    <script defer src="js/memory.js"></script>
+    <script defer src="js/math.js"></script>
+    <script defer src="js/wordscramble.js"></script>
+  </body>
 </html>

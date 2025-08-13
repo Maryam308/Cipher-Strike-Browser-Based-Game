@@ -56,4 +56,4 @@ To Be Added
 
 ## MockUp
 
-To Be Added ( will be created in Figma)
+A high-fidelity was created in Figma
