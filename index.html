@@ -20,15 +20,27 @@
         </div>
 
         <div class="start-btn-container">
-          <button class="start-btn" onclick="goToMainMenu()">Start</button>
+          <button id="start-btn">Start</button>
         </div>
       </div>
 
       <!-- Screen 2: Main Menu -->
       <div id="main-menu" class="screen">
         <div id="main-menu-header">
-          <button class="back-btn" onclick="goToSplashScreen()">← Back</button>
+          <button id="back-btn">← Back</button>
         </div>
+
+        <!-- Game UI Elements -->
+        <div class="game-ui">
+          <div class="code-display">Code: 🔒🔒🔒</div>
+        </div>
+
+        <div class="heart-container">
+          <span class="heart">❤️</span>
+          <span class="heart">❤️</span>
+          <span class="heart">❤️</span>
+        </div>
+
         <div id="challenges-container">
           <!-- Memory Challenge Card -->
           <div class="challenge-card">
