@@ -32,28 +32,28 @@
 
         <!-- Game UI Elements -->
         <div class="game-ui">
-          <div class="code-display">Code: 🔒🔒🔒</div>
+          <div id="secret-code-display" class="code-display"></div>
         </div>
 
-        <div class="heart-container">
-          <span class="heart">❤️</span>
-          <span class="heart">❤️</span>
-          <span class="heart">❤️</span>
+        <div id="heart-container">
+          <!--Note: The hearts are added using javascript-->
         </div>
 
         <div id="challenges-container">
           <!-- Memory Challenge Card -->
-          <div class="challenge-card">
+          <div class="challenge-card" id="memory-challenge">
             <img src="assets/images/memory-image.png" alt="Memory Challenge" />
             <p>Memory Challenge</p>
           </div>
+
           <!-- Math Challenge Card -->
-          <div class="challenge-card">
+          <div class="challenge-card" id="math-challenge">
             <img src="assets/images/math-image.png" alt="Math Challenge" />
             <p>Math Challenge</p>
           </div>
+
           <!-- Word Scramble Challenge Card -->
-          <div class="challenge-card">
+          <div class="challenge-card" id="word-challenge">
             <img
               src="assets/images/word-image.png"
               alt="Word Scramble Challenge"
@@ -67,25 +67,147 @@
       <div id="game-selection" class="screen"></div>
 
       <!-- Screen 4: Memory Game -->
-      <div id="memory-game" class="screen"></div>
+      <div id="memory-game" class="screen">
+        <div class="game-header">
+          <button id="memory-back-btn" class="btn btn-secondary">← Back</button>
+        </div>
+        <div class="game-screen">
+          <div class="game-content">
+            <h2 class="game-title">Memory Challenge</h2>
+            <div id="memory-timer" class="timer">Time: 10</div>
+            <div
+              id="memory-message"
+              style="font-size: 18px; margin-bottom: 20px"
+            >
+              Watch the sequence...
+            </div>
+            <div class="color-grid">
+              <button class="color-button color-red" data-color="red"></button>
+              <button
+                class="color-button color-blue"
+                data-color="blue"
+              ></button>
+              <button
+                class="color-button color-green"
+                data-color="green"
+              ></button>
+              <button
+                class="color-button color-yellow"
+                data-color="yellow"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Screen 5: Math Game -->
-      <div id="math-game" class="screen"></div>
+      <div id="math-game" class="screen">
+        <div class="game-header">
+          <button id="math-back-btn" class="btn btn-secondary">← Back</button>
+        </div>
+        <div class="game-screen">
+          <div class="game-content">
+            <h2 class="game-title">Math Challenge</h2>
+            <div id="math-timer" class="timer">Time: 10</div>
+            <div id="math-problem" class="math-problem">15 + 27 = ?</div>
+            <input
+              type="number"
+              id="math-input"
+              class="math-input"
+              placeholder="Your answer"
+            />
+            <br />
+            <button id="math-submit" class="btn btn-primary">
+              Submit Answer
+            </button>
+          </div>
+        </div>
+      </div>
 
       <!-- Screen 6: Word Scramble Game -->
-      <div id="word-scramble" class="screen"></div>
+      <div id="word-scramble" class="screen">
+        <div class="game-header">
+          <button id="word-back-btn" class="btn btn-secondary">← Back</button>
+        </div>
+        <div class="game-screen">
+          <div class="game-content">
+            <h2 class="game-title">Word Scramble Challenge</h2>
+            <div id="word-timer" class="timer">Time: 20</div>
+            <div id="word-scrambled" class="word-scrambled">TENGAI</div>
+            <div id="word-hint" class="word-hint">
+              Hint: Undercover operative
+            </div>
+            <input
+              type="text"
+              id="word-input"
+              class="word-input"
+              placeholder="UNSCRAMBLED WORD"
+            />
+            <br />
+            <button id="word-submit" class="btn btn-primary">
+              Submit Answer
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Screen 7: Win Screen -->
+      <div id="win-screen" class="screen">
+        <div class="game-ui">
+          <div id="secret-code-display" class="code-display">Code: 🔓🔓🔓</div>
+        </div>
 
-      <!-- Screen 7: Game Over -->
-      <div id="game-over" class="screen"></div>
+        <div class="result-container">
+          <div class="character-image">
+            <img
+              src="assets/images/character-smile.png"
+              alt="Happy Character"
+            />
+          </div>
 
-      <!-- Screen 8: Victory -->
-      <div id="victory" class="screen"></div>
+          <div class="result-message-box">
+            <h2 class="result-title">Mission Completed!</h2>
+          </div>
+
+          <div class="treasure-container">
+            <div class="treasure-chest">
+              <img
+                src="assets/images/treasure-opened.png"
+                alt="Treasure Chest"
+              />
+            </div>
+          </div>
+
+          <div class="result-button">
+            <button id="win-main-menu-btn" class="main-menu-btn">
+              Main Menu
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 8: Lose Screen -->
+      <div id="lose-screen" class="screen">
+        <div class="game-ui">
+          <div id="secret-code-display" class="code-display">Code: 🔒🔒🔒</div>
+        </div>
+
+        <div class="result-container">
+          <div class="character-image">
+            <img src="assets/images/character-sad.png" alt="Sad Character" />
+          </div>
+
+          <div class="result-message-box">
+            <h2 class="result-title">Try Again</h2>
+          </div>
+
+          <div class="result-button">
+            <button id="lose-main-menu-btn" class="main-menu-btn">
+              Main Menu
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- JavaScript Files -->
     <script defer src="js/app.js"></script>
-    <script defer src="js/memory.js"></script>
-    <script defer src="js/math.js"></script>
-    <script defer src="js/wordscramble.js"></script>
   </body>
 </html>
