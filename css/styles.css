@@ -466,37 +466,142 @@ body {
   transform: translateY(-2px);
 }
 
-/* Victory and Game Over Screens */
-#victory,
-#game-over {
+/* Win and Lose Screen Styles */
+#win-screen,
+#lose-screen {
+  background: linear-gradient(to bottom, #e8d5b7 0%, #c9a96e 50%, #5a7c5a 100%);
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(139, 69, 19, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(34, 139, 34, 0.1) 0%,
+      transparent 50%
+    );
+  position: relative;
+}
+
+/* Result Container */
+.result-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 80px 40px 60px;
+  position: relative;
+}
+
+/* Character Image */
+.character-image {
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.character-image img {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+
+/* Result Message Box */
+.result-message-box {
+  background: rgba(101, 67, 33, 0.95);
+  padding: 20px 40px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  border: 3px solid #8b5a3c;
+  position: relative;
+}
+
+.result-message-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #d4621a, #8b5a3c);
+  border-radius: 27px;
+  z-index: -1;
+}
+
+.result-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f4e4bc;
   text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
 }
 
-#victory .game-content,
-#game-over .game-content {
-  background: rgba(255, 248, 220, 0.95);
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(139, 69, 19, 0.3);
+/* Treasure Container (Win Screen Only) */
+.treasure-container {
+  margin-bottom: 40px;
+  position: relative;
 }
 
-#victory h2 {
-  color: #2ed573;
-  font-size: 32px;
-  margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+.treasure-chest img {
+  width: 150px;
+  height: 130px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
 }
 
-#game-over h2 {
-  color: #ff4757;
-  font-size: 32px;
-  margin-bottom: 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+/* Main Menu Button */
+.main-menu-btn {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid #d4621a;
+  position: relative;
+  z-index: 2;
+}
+
+.main-menu-btn::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, #ff8547, #ffa032);
+  border-radius: 33px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.main-menu-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4),
+    inset 0 2px 6px rgba(255, 255, 255, 0.3);
+}
+
+.main-menu-btn:hover::before {
+  opacity: 1;
+}
+
+.main-menu-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive design for smaller screens */

@@ -10,6 +10,31 @@ const CHALLENGES = {
     { problem: "7 × 6", answer: 42, timeLimit: 8 },
     { problem: "81 ÷ 9", answer: 9, timeLimit: 12 },
     { problem: "120 x 10", answer: 1200, timeLimit: 12 },
+    { problem: "36 + 28", answer: 64, timeLimit: 10 },
+    { problem: "12 × 11", answer: 132, timeLimit: 10 },
+    { problem: "169 ÷ 13", answer: 13, timeLimit: 12 },
+    { problem: "95 - 47", answer: 48, timeLimit: 8 },
+    { problem: "√100", answer: 10, timeLimit: 10 },
+    { problem: "45 + 67", answer: 112, timeLimit: 10 },
+    { problem: "9 × 8", answer: 72, timeLimit: 8 },
+    { problem: "216 ÷ 18", answer: 12, timeLimit: 12 },
+    { problem: "73 - 29", answer: 44, timeLimit: 8 },
+    { problem: "√121", answer: 11, timeLimit: 12 },
+    { problem: "34 + 56", answer: 90, timeLimit: 10 },
+    { problem: "6 × 13", answer: 78, timeLimit: 10 },
+    { problem: "195 ÷ 15", answer: 13, timeLimit: 12 },
+    { problem: "84 - 38", answer: 46, timeLimit: 8 },
+    { problem: "√49", answer: 7, timeLimit: 10 },
+    { problem: "27 + 35", answer: 62, timeLimit: 8 },
+    { problem: "14 × 7", answer: 98, timeLimit: 10 },
+    { problem: "252 ÷ 21", answer: 12, timeLimit: 12 },
+    { problem: "67 - 29", answer: 38, timeLimit: 8 },
+    { problem: "5²", answer: 25, timeLimit: 10 },
+    { problem: "18 + 24", answer: 42, timeLimit: 8 },
+    { problem: "15 × 4", answer: 60, timeLimit: 10 },
+    { problem: "156 ÷ 12", answer: 13, timeLimit: 12 },
+    { problem: "93 - 45", answer: 48, timeLimit: 8 },
+    { problem: "7²", answer: 49, timeLimit: 10 },
   ],
   memory: [
     {
@@ -81,6 +106,192 @@ const CHALLENGES = {
       answer: "GUARD",
       hint: "Security personnel",
       timeLimit: 15,
+    },
+    {
+      scrambled: "KCOL",
+      answer: "LOCK",
+      hint: "Keeps things secure",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "YEK",
+      answer: "KEY",
+      hint: "Opens locked doors",
+      timeLimit: 10,
+    },
+    {
+      scrambled: "DROWS",
+      answer: "SWORD",
+      hint: "Ancient weapon",
+      timeLimit: 15,
+    },
+    {
+      scrambled: "LEIHDS",
+      answer: "SHIELD",
+      hint: "Protective barrier",
+      timeLimit: 18,
+    },
+    {
+      scrambled: "DEXORT",
+      answer: "DETOX",
+      hint: "Remove poison",
+      timeLimit: 18,
+    },
+    {
+      scrambled: "SEAB",
+      answer: "BASE",
+      hint: "Secret headquarters",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "DEKCAL",
+      answer: "CLAKED",
+      hint: "Hidden from view",
+      timeLimit: 20,
+    },
+    {
+      scrambled: "GRTAET",
+      answer: "TARGET",
+      hint: "Mission objective",
+      timeLimit: 20,
+    },
+    {
+      scrambled: "MRAC",
+      answer: "CRAM",
+      hint: "Study intensively",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "DLEB",
+      answer: "BLED",
+      hint: "Lost blood",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "EDNI",
+      answer: "DINE",
+      hint: "Eat a meal",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "DOHL",
+      answer: "HOLD",
+      hint: "Keep in grasp",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "EPOH",
+      answer: "HOPE",
+      hint: "Wish for success",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "EMIT",
+      answer: "TIME",
+      hint: "What's always running out",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "EDOC",
+      answer: "CODE",
+      hint: "Secret language",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "ELIF",
+      answer: "FILE",
+      hint: "Document storage",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "PMUJ",
+      answer: "JUMP",
+      hint: "Leap over obstacles",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "KCAB",
+      answer: "BACK",
+      hint: "Return or rear side",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "WOLF",
+      answer: "FLOW",
+      hint: "Move smoothly",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "DEEPS",
+      answer: "SPEED",
+      hint: "How fast you move",
+      timeLimit: 15,
+    },
+    {
+      scrambled: "KRDA",
+      answer: "DARK",
+      hint: "Without light",
+      timeLimit: 12,
+    },
+    {
+      scrambled: "THGIL",
+      answer: "LIGHT",
+      hint: "Illumination",
+      timeLimit: 15,
+    },
+    {
+      scrambled: "DROWSSAP",
+      answer: "PASSWORD",
+      hint: "Access credential",
+      timeLimit: 25,
+    },
+    {
+      scrambled: "YRTNUOC",
+      answer: "COUNTRY",
+      hint: "Nation or territory",
+      timeLimit: 22,
+    },
+    {
+      scrambled: "NOISSIM",
+      answer: "MISSION",
+      hint: "Important assignment",
+      timeLimit: 22,
+    },
+    {
+      scrambled: "NGISED",
+      answer: "DESIGN",
+      hint: "Create a plan",
+      timeLimit: 18,
+    },
+    {
+      scrambled: "DLEIF",
+      answer: "FIELD",
+      hint: "Area of operation",
+      timeLimit: 15,
+    },
+    {
+      scrambled: "TROPREP",
+      answer: "REPORT",
+      hint: "Official document",
+      timeLimit: 18,
+    },
+    {
+      scrambled: "ROTCAF",
+      answer: "FACTOR",
+      hint: "Important element",
+      timeLimit: 18,
+    },
+    {
+      scrambled: "ECIVRES",
+      answer: "SERVICE",
+      hint: "Helpful work",
+      timeLimit: 20,
+    },
+    {
+      scrambled: "TCEJBO",
+      answer: "OBJECT",
+      hint: "Physical thing",
+      timeLimit: 18,
     },
   ],
 };
@@ -264,10 +475,17 @@ const challengeFailed = () => {
 
   setTimeout(() => {
     if (lives <= 0) {
-      // Game Over
+      // show lose screen
       goToScreen("lose-screen");
-      resetGame();
-      goToScreen("splash-screen");
+
+      // Play lose sound
+      playLoseSound();
+
+      // After 5 seconds, go to splash screen and reset
+      setTimeout(() => {
+        goToScreen("splash-screen");
+        resetGame();
+      }, 5000);
     } else {
       goToScreen("main-menu");
     }
@@ -277,10 +495,32 @@ const challengeFailed = () => {
 const checkWinCondition = () => {
   if (completedChallenges.length === 3) {
     setTimeout(() => {
+      // Show win screen
       goToScreen("win-screen");
-      resetGame();
+
+      // Play win sound
+      playWinSound();
+
+      // After 5 seconds, go to splash screen and reset
+      setTimeout(() => {
+        goToScreen("splash-screen");
+        resetGame();
+      }, 5000);
     }, 500);
   }
+};
+
+// Audio functions
+const playWinSound = () => {
+  const winAudio = new Audio("assets/sound/game-win.mp3");
+  winAudio.volume = 0.7;
+  winAudio.play();
+};
+
+const playLoseSound = () => {
+  const loseAudio = new Audio("assets/sounds/game-over.mp3");
+  loseAudio.volume = 0.7;
+  loseAudio.play();
 };
 
 const resetGame = () => {
