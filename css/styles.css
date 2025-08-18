@@ -138,7 +138,8 @@ body {
   z-index: 10;
 }
 
-#back-btn {
+#back-btn,
+#restart-btn {
   background: #ff6b35;
   color: white;
   border: none;
@@ -154,9 +155,14 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-#back-btn:hover {
+#back-btn:hover,
+#restart-btn:hover {
   background: #e55a2b;
   transform: translateY(-2px);
+}
+
+#restart-btn {
+  margin-top: 5px;
 }
 
 /* Game UI Elements */
