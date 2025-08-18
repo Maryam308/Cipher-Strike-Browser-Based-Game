@@ -4,9 +4,7 @@
 
 The objective of the fast-paced puzzle game with an espionage theme, **Cipher Strike**, is to solve a 3-digit code by solving a series of randomly generated mini-challenges. Failures result in death, while successful challenges expose one code digit.
 
-The challenges come in a tight, mission-style setting and include anything from fast math tasks and memory tests to reflex and logic puzzles. Players must reveal all three digits and enter the correct code to win before the allotted lives, or, in hardcore mode, before the time runs out.
-
----
+## The challenges come in a tight, mission-style setting and include anything from fast math tasks and memory tests to reflex and logic puzzles. Players must reveal all three digits and enter the correct code to win before the allotted lives, or, in hardcore mode, before the time runs out.
 
 ## 🎮 Core Gameplay
 

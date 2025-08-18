@@ -84,7 +84,7 @@ const CHALLENGES = {
       timeLimit: 20,
     },
     {
-      scrambled: "TELVAU",
+      scrambled: "TLVAU",
       answer: "VAULT",
       hint: "Secure storage",
       timeLimit: 15,

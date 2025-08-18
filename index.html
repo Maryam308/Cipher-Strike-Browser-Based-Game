@@ -10,10 +10,21 @@
   <body>
     <!-- Main Game Container -->
     <div id="game-container">
+      <div id="video-overlay" style="display: none">
+        <div id="video-center">
+          <video id="instructions-video" width="480" controls>
+            <source
+              src="assets/videos/game-instructions.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
       <!-- Screen 1: Splash Screen -->
       <div id="splash-screen" class="screen active">
         <div class="info-div">
-          <button class="info-btn">i</button>
+          <button id="info-btn">i</button>
         </div>
 
         <div id="logo">

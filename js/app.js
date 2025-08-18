@@ -533,6 +533,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const infoBtn = document.getElementById("info-btn");
+  if (infoBtn) {
+    infoBtn.addEventListener("click", () => {
+      const overlay = document.getElementById("video-overlay");
+      const video = document.getElementById("instructions-video");
+      if (overlay && video) {
+        overlay.style.display = "flex";
+        video.currentTime = 0;
+        video.play();
+      }
+    });
+  }
+
+  //Hide overlay when video ends or when overlay is clicked
+  const overlay = document.getElementById("video-overlay");
+  if (overlay) {
+    overlay.addEventListener("click", (e) => {
+      // Only close if clicked outside the video
+      if (e.target === overlay) {
+        overlay.style.display = "none";
+        const video = document.getElementById("instructions-video");
+        if (video) video.pause();
+      }
+    });
+  }
+
   //restart btn event
   const restartBtn = document.getElementById("restart-btn");
   if (restartBtn) {
