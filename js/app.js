@@ -151,6 +151,9 @@ const goToScreen = (screenId) => {
 };
 
 const challengeCompleted = (challengeType) => {
+  // Play correct answer sound
+  playCorrectSound();
+
   challengeProgress[challengeType].completed++;
 
   // Check if this challenge type is fully completed
@@ -173,6 +176,9 @@ const challengeCompleted = (challengeType) => {
 };
 
 const challengeFailed = () => {
+  // Play wrong answer sound
+  playWrongSound();
+
   lives--;
   updateHeartDisplay();
 
@@ -215,7 +221,7 @@ const checkWinCondition = () => {
 
 // Audio functions
 const playWinSound = () => {
-  const winAudio = new Audio("assets/sound/game-win.mp3");
+  const winAudio = new Audio("assets/sounds/game-win.mp3");
   winAudio.volume = 0.7;
   winAudio.play();
 };
@@ -224,6 +230,22 @@ const playLoseSound = () => {
   const loseAudio = new Audio("assets/sounds/game-over.mp3");
   loseAudio.volume = 0.7;
   loseAudio.play();
+};
+
+const playCorrectSound = () => {
+  const correctAudio = new Audio("assets/sounds/correct-answer-sound.mp3");
+  correctAudio.volume = 0.6;
+  correctAudio.play().catch((error) => {
+    console.log("Could not play correct answer sound:", error);
+  });
+};
+
+const playWrongSound = () => {
+  const wrongAudio = new Audio("assets/sounds/wrong-answer-sound.mp3");
+  wrongAudio.volume = 0.6;
+  wrongAudio.play().catch((error) => {
+    console.log("Could not play wrong answer sound:", error);
+  });
 };
 
 const resetGame = () => {
@@ -511,18 +533,16 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeartDisplay();
   updateChallengeCards();
 
-  // Background music setup
   const backgroundMusic = new Audio("assets/sounds/background-music.mp3");
   backgroundMusic.loop = true;
   backgroundMusic.volume = 0.5;
-  backgroundMusic.autoplay;
-  backgroundMusic.play();
 
-  // Navigation event listeners
   const startBtn = document.getElementById("start-btn");
   if (startBtn) {
     startBtn.addEventListener("click", () => {
       goToScreen("main-menu");
+
+      backgroundMusic.play();
     });
   }
 
