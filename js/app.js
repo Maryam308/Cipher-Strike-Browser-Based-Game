@@ -282,6 +282,9 @@ const resetGame = () => {
     }
   });
 
+  // Re-create progress indicators with fresh state
+  updateChallengeCards();
+
   stopTimer();
 };
 
