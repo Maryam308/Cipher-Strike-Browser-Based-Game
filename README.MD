@@ -91,7 +91,7 @@ With a **lives system** and **time limits**, every decision matters as you race 
 
 ## 🚀 Next Steps
 
-### Gameplay Enhancements
+### Game Enhancements
 
 - Difficulty Levels: Easy / Medium / Hard modes
 - Additional Challenge Types: Logic puzzles, patterns, spatial reasoning
