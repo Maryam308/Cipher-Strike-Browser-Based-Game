@@ -1,5 +1,7 @@
 # 🔐 Cipher Strike
 
+![SplashScreen Screenshot](./assets/images/cipher-strike-splash.png)
+
 **Cipher Strike** is an exciting **puzzle-adventure game** that challenges players to crack a secret code by completing three different types of brain-teasing challenges. Test your **memory, math, and word skills** under pressure and see if you have what it takes to unlock the treasure!
 
 ---
