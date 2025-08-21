@@ -2,6 +2,8 @@
 
 ![SplashScreen Screenshot](./assets/images/cipher-strike-splash.png)
 
+![Main menu Screenshot](./assets/images/main-menu.png)
+
 **Cipher Strike** is an exciting **puzzle-adventure game** that challenges players to crack a secret code by completing three different types of brain-teasing challenges. Test your **memory, math, and word skills** under pressure and see if you have what it takes to unlock the treasure!
 
 ---
@@ -38,6 +40,7 @@ With a **lives system** and **time limits**, every decision matters as you race 
 ## 🎨 Planning Materials
 
 - **Figma Mockup** → [View Design](https://www.figma.com/design/1FPi0f9JVIr6x0SqNRsBqQ/Cipher-Strike?node-id=0-1&t=wCcHAZdeQoO9GHku-1)
+  ![Figma Mockup Screenshot](./assets/images/figma-mockup.png)
 - **User Stories** → [View Document](https://drive.google.com/file/d/17BnEYRopcnbbCRs0Vxl3io79VY6TJ32-/view?usp=sharing)
 
 ---
