@@ -78,7 +78,7 @@ const CHALLENGES = {
       timeLimit: 30,
     },
     {
-      scrambled: "GADESU",
+      scrambled: "GAEDTG",
       answer: "GADGET",
       hint: "Spy equipment",
       timeLimit: 20,
